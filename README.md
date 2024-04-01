@@ -36,19 +36,29 @@ AWS >> Criar 1 instância EC2 com o sistema operacional Amazon Linux 2 (Família
 AWS >> Gerar 1 Elastic IP e anexar à instância EC2
 
 1) Certifiquei que tinha um GATEAWAY de internet antes;
+   
 2)Na página do serviço EC2, no menu lateral esquerdo, em Rede e Segurança, fui em "IPs elásticos";
+
 3)Cliquei em Alocar endereço IP elástico;
+
 4)Por padrão, o Grupo de borda de Rede já vem selecionado, assim como o Conjunto de endereços IPv4 públicos da Amazon;
+
 5)Depois da criação, selecione o IP na lista, fui em Ações no menu superior e depois em Associar endereço IP elástico;
+
 6)Selecionei a instância EC2 criada anteriormente;
+
 7)Usei o endereço de IP privado que a AWS coloca como padrão;
+
 8)Marquei a opção Permitir que o endereço IP elástico seja reassociado e clique em Associar.
 
 AWS >> Liberar as portas de comunicação para acesso público 
 ![image](https://github.com/RafaDavila/Projeto-Compass-AWS-Linux/assets/113639519/9f4a5dcc-aa0a-4967-8ee9-e5218490f327)
 1)Na página do serviço EC2, no menu lateral esquerdo, em Rede e Segurança, cliquei em Security groups;
+
 2)Selecione o grupo de segurança que foi criado com a instância EC2;
+
 3)Cliquei em Regras de entrada, na parte inferior, e depois, do lado direito da tela, em Editar regras de entrada;
+
 4)Coloquei as regras conforme passado pela Compass.
 
 Nessa atividade eu usarei o PuTTY, um client SSH gratuito para o Windows, baixei em seu site oficial, tanto no Windows como em uma máquina virtual com Linux, no meu caso, Debian.
