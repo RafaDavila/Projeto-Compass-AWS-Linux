@@ -77,14 +77,16 @@ Linux >> Montando o sistema de arquivos do EFS na máquina
 ![Captura de tela 2024-03-30 165238](https://github.com/RafaDavila/Projeto-Compass-AWS-Linux/assets/113639519/9428b1fb-bbd9-4eed-bb16-4e34ce1a46f3)
 2) Depois, usei o comando sudo yum install -y amazon-efs-utils para o suporte ao NFS;
 3) Utilizei o comando sudo mkdir /mnt/efs para criar um diretório local que servirá como ponto de montagem;
-4) Para montar o sistema de arquivos, foi para o painel da AWS, e digita "EFS" na barra de pesquisa, chegando nesta página:
+4) Criei o /mnt/efs/rafael
+5) Para montar o sistema de arquivos, foi para o painel da AWS, e digita "EFS" na barra de pesquisa, chegando nesta página:
  ![image](https://github.com/RafaDavila/Projeto-Compass-AWS-Linux/assets/113639519/7f769a47-ae23-4620-b468-432756bdbe91)
-5) Se não tiver um sistema de arquivos, crie um, e então, selecione ele e vá até detalhes, então, "anexar" copie o código de "montar via DNS";
+6) Se não tiver um sistema de arquivos, crie um, e então, selecione ele e vá até detalhes, então, "anexar" copie o código de "montar via DNS";
 
  Linux >> Configurando Apache
 
  1) Instalei o Apache com o comando sudo yum install httpd -y;
  2) Iniciei o Apache no sistema com o comando sudo systemctl start httpd;
+ 3) Verifique se o apache está em execução através do comando sudo systemctl status httpd;
 ![Captura de tela 2024-03-30 172422](https://github.com/RafaDavila/Projeto-Compass-AWS-Linux/assets/113639519/43e94488-1b7a-4519-9477-1b855c919c58)
 
 
